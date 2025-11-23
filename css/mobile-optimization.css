@@ -1,0 +1,709 @@
+/* Mobile Optimization Styles - Enhanced Mobile Experience */
+
+/* Base mobile improvements */
+@media screen and (max-width: 767px) {
+  /* Improved container padding */
+  .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .container.is-max {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .container.is-small {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  /* Better section spacing on mobile */
+  .section {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+
+  /* Improved heading sizes for mobile */
+  .heading-responsive_xlarge {
+    font-size: 2.5rem !important;
+    line-height: 1.1 !important;
+    letter-spacing: -0.02em !important;
+  }
+
+  .heading_h1,
+  h1 {
+    font-size: 2.25rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .heading_h2,
+  h2 {
+    font-size: 1.875rem !important;
+    line-height: 1.3 !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .heading_h3,
+  h3 {
+    font-size: 1.5rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .heading_h4,
+  h4 {
+    font-size: 1.25rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  /* Better paragraph spacing */
+  .paragraph_large,
+  .paragraph_medium,
+  .paragraph_small {
+    line-height: 1.6 !important;
+    margin-bottom: 1rem !important;
+  }
+
+  /* Enhanced button sizing for touch */
+  .button,
+  .w-button,
+  a.button {
+    min-height: 48px !important;
+    padding: 14px 28px !important;
+    font-size: 16px !important;
+    border-radius: 8px !important;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .button_label {
+    font-size: 16px !important;
+    padding: 0 !important;
+  }
+
+  /* Better card spacing */
+  .card {
+    padding: 24px !important;
+    border-radius: 12px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .card_body {
+    padding: 24px !important;
+  }
+
+  .card_body_small {
+    padding: 20px !important;
+  }
+
+  /* Improved pricing cards */
+  .grid_4-col.gap-small {
+    gap: 16px !important;
+  }
+
+  .grid_4-col.gap-small > li {
+    margin-bottom: 24px !important;
+  }
+
+  /* Better image ratios on mobile */
+  .image-ratio_3x2 {
+    margin-bottom: 20px !important;
+  }
+
+  .image-ratio_1x1 {
+    margin-bottom: 20px !important;
+  }
+
+  /* Enhanced navigation */
+  .nav_container {
+    padding: 16px 20px !important;
+  }
+
+  .nav_logo {
+    font-size: 1.25rem !important;
+  }
+
+  /* Better form inputs for mobile */
+  .input_field,
+  .w-input {
+    min-height: 48px !important;
+    padding: 14px 16px !important;
+    font-size: 16px !important;
+    border-radius: 8px !important;
+    -webkit-appearance: none;
+  }
+
+  .input_text-area,
+  textarea.w-input {
+    min-height: 120px !important;
+    padding: 14px 16px !important;
+    font-size: 16px !important;
+  }
+
+  .input_label {
+    font-size: 14px !important;
+    margin-bottom: 8px !important;
+  }
+
+  /* Improved spacing utilities */
+  .margin-bottom_small {
+    margin-bottom: 16px !important;
+  }
+
+  .margin-top_small {
+    margin-top: 16px !important;
+  }
+
+  .margin-bottom_medium {
+    margin-bottom: 24px !important;
+  }
+
+  .margin-top_medium {
+    margin-top: 24px !important;
+  }
+
+  .margin-bottom_large {
+    margin-bottom: 32px !important;
+  }
+
+  .margin-top_large {
+    margin-top: 32px !important;
+  }
+
+  .padding-top_small {
+    padding-top: 16px !important;
+  }
+
+  .padding-bottom_small {
+    padding-bottom: 16px !important;
+  }
+
+  /* Better gap spacing */
+  .gap-small {
+    gap: 16px !important;
+  }
+
+  .gap-medium {
+    gap: 24px !important;
+  }
+
+  .gap-large {
+    gap: 32px !important;
+  }
+
+  /* Header section improvements */
+  header.section {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  /* Testimonial cards spacing */
+  .grid_4-col .card {
+    margin-bottom: 16px !important;
+  }
+
+  .avatar {
+    width: 48px !important;
+    height: 48px !important;
+    margin-bottom: 12px !important;
+  }
+
+  /* Footer improvements */
+  .footer {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  .footer_link {
+    padding: 12px 0 !important;
+    font-size: 1rem !important;
+  }
+
+  /* Better text alignment */
+  .text-align_center {
+    text-align: center !important;
+  }
+
+  /* Contact section improvements */
+  .flex_vertical.gap-xsmall {
+    gap: 12px !important;
+  }
+
+  /* Icon sizing */
+  .icon {
+    min-width: 24px !important;
+    min-height: 24px !important;
+  }
+
+  /* Eyebrow text */
+  .eyebrow {
+    font-size: 12px !important;
+    letter-spacing: 0.05em !important;
+    margin-bottom: 8px !important;
+  }
+
+  /* Subheading improvements */
+  .subheading {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 24px !important;
+  }
+}
+
+/* Extra small mobile devices (iPhone SE, etc.) */
+@media screen and (max-width: 479px) {
+  .container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .section {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  .heading-responsive_xlarge {
+    font-size: 2rem !important;
+  }
+
+  .heading_h2,
+  h2 {
+    font-size: 1.625rem !important;
+  }
+
+  .heading_h3,
+  h3 {
+    font-size: 1.375rem !important;
+  }
+
+  .card {
+    padding: 20px !important;
+  }
+
+  .button,
+  .w-button {
+    padding: 12px 24px !important;
+    font-size: 15px !important;
+  }
+
+  /* Single column layout for small screens */
+  .grid_4-col {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .grid_3-col {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  .grid_2-col {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+}
+
+/* Touch target improvements */
+@media (pointer: coarse) {
+  a,
+  button,
+  .button,
+  .w-button,
+  input[type="submit"],
+  input[type="button"] {
+    min-height: 44px !important;
+    min-width: 44px !important;
+  }
+
+  .nav_link,
+  .footer_link {
+    min-height: 44px !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+}
+
+/* Prevent text size adjustment on iOS */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* Smooth scrolling */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Better focus states for mobile */
+*:focus {
+  outline: 2px solid rgba(0, 0, 0, 0.2);
+  outline-offset: 2px;
+}
+
+/* Remove tap highlight but keep accessibility */
+a,
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Improve readability */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Better line height for mobile reading */
+p,
+.paragraph_small,
+.paragraph_medium,
+.paragraph_large {
+  line-height: 1.7 !important;
+}
+
+/* Spacing for lists */
+ul,
+ol {
+  padding-left: 24px;
+}
+
+/* Better checkbox/radio sizing */
+input[type="checkbox"],
+input[type="radio"] {
+  min-width: 20px !important;
+  min-height: 20px !important;
+  margin-right: 8px !important;
+}
+
+/* Improve form layouts */
+.w-form {
+  margin-top: 24px;
+}
+
+.input {
+  margin-bottom: 20px !important;
+}
+
+/* Better testimonial layout */
+.card_body.is-small {
+  padding: 20px !important;
+}
+
+/* Pricing section improvements */
+.grid_4-col > li .card {
+  height: auto !important;
+}
+
+/* Remove any fixed heights that cause issues */
+.card_body {
+  height: auto !important;
+}
+
+/* Better spacing in feature lists */
+.mega-nav_list {
+  padding-left: 0 !important;
+}
+
+.mega-nav_list li {
+  margin-bottom: 12px !important;
+}
+
+/* Improve button groups */
+.button-group {
+  gap: 12px !important;
+  flex-wrap: wrap !important;
+}
+
+.button-group.is-vertical-stretch {
+  flex-direction: column;
+}
+
+.button-group.is-vertical-stretch .button {
+  width: 100% !important;
+}
+
+/* Better max-width constraints */
+.max-width_large {
+  max-width: 100% !important;
+}
+
+.max-width_medium {
+  max-width: 100% !important;
+}
+
+/* Improve header intro animation spacing */
+.ix_hero-intro-slide-up-100vh {
+  margin-bottom: 12px !important;
+}
+
+/* Better grid layouts on mobile */
+.grid_12-col {
+  grid-template-columns: 1fr !important;
+  gap: 16px !important;
+}
+
+/* Improve card links */
+.card-link {
+  display: block;
+  width: 100%;
+}
+
+/* Better footer spacing */
+.footer_bottom {
+  margin-top: 32px !important;
+  padding-top: 24px !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Additional Mobile-Specific Improvements */
+
+/* Better hero section spacing */
+header.section .heading-responsive_xlarge {
+  margin-bottom: 16px !important;
+}
+
+header.section .container {
+  padding-top: 30px !important;
+  padding-bottom: 40px !important;
+}
+
+/* Improved pricing cards on mobile */
+.grid_4-col > li {
+  margin-bottom: 32px !important;
+}
+
+.grid_4-col > li .card {
+  padding: 28px !important;
+  margin-bottom: 0 !important;
+}
+
+.grid_4-col > li .card_body_small {
+  padding: 24px !important;
+}
+
+/* Better heading hierarchy on mobile */
+.header h2 {
+  margin-bottom: 16px !important;
+}
+
+.header .subheading {
+  margin-bottom: 32px !important;
+}
+
+/* Improved feature highlights section */
+.ix_sticky-card .card {
+  margin-bottom: 24px !important;
+}
+
+.ix_sticky-card .card_body {
+  padding: 28px !important;
+}
+
+/* Better testimonial spacing */
+.grid_4-col .card_body.is-small {
+  padding: 20px !important;
+}
+
+.grid_4-col .card_body.is-small .avatar {
+  width: 56px !important;
+  height: 56px !important;
+}
+
+/* Contact form improvements */
+.w-form .input {
+  margin-bottom: 24px !important;
+}
+
+.checkbox {
+  margin-top: 20px !important;
+  margin-bottom: 24px !important;
+}
+
+/* Better CTA sections */
+.flex_vertical.is-x-center {
+  padding: 40px 20px !important;
+}
+
+.flex_vertical.is-x-center h2 {
+  margin-bottom: 16px !important;
+}
+
+.flex_vertical.is-x-center .subheading {
+  margin-bottom: 32px !important;
+}
+
+/* FAQ section improvements */
+.grid_3-col .padding-left_medium {
+  padding-left: 0 !important;
+  padding-top: 24px !important;
+  margin-bottom: 32px !important;
+  border-left: none !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.grid_3-col .divider-vertical {
+  border-left: none !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 24px !important;
+}
+
+/* Content block improvements */
+.content-block-link {
+  margin-bottom: 24px !important;
+}
+
+.content-block-link .image-ratio_2x3 {
+  margin-bottom: 20px !important;
+}
+
+.content-block-link h3 {
+  margin-bottom: 12px !important;
+}
+
+.content-block-link p {
+  margin-bottom: 20px !important;
+  line-height: 1.7 !important;
+}
+
+/* Better spacing for text sections */
+.text-color_secondary {
+  margin-bottom: 12px !important;
+}
+
+/* Navigation improvements for mobile */
+.nav_container {
+  padding: 12px 20px !important;
+}
+
+.nav_logo {
+  font-size: 1.125rem !important;
+}
+
+/* Better icon sizing */
+.icon.is-medium {
+  width: 32px !important;
+  height: 32px !important;
+}
+
+.icon.is-xsmall {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+/* Improve text readability */
+p,
+.paragraph_small,
+.paragraph_medium {
+  font-size: 15px !important;
+  line-height: 1.7 !important;
+}
+
+.paragraph_large {
+  font-size: 17px !important;
+  line-height: 1.7 !important;
+}
+
+/* Better line breaks */
+.br-mobile {
+  display: block;
+}
+
+/* Ensure images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Better button text sizing */
+.button div,
+.button_label {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+}
+
+/* Improve form labels */
+.checkbox_label {
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+}
+
+/* Better list spacing */
+ul.w-list-unstyled {
+  padding-left: 0;
+}
+
+ul.w-list-unstyled li {
+  margin-bottom: 12px !important;
+}
+
+/* Ensure proper text wrapping */
+h1, h2, h3, h4, h5, h6,
+.heading_h1, .heading_h2, .heading_h3, .heading_h4 {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Better scroll behavior */
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Remove unnecessary margins on mobile */
+.margin-bottom_none {
+  margin-bottom: 0 !important;
+}
+
+/* Improve sticky cards spacing */
+.flex_horizontal.flex_vertical {
+  gap: 32px !important;
+}
+
+/* Better section headers */
+.header {
+  margin-bottom: 40px !important;
+  text-align: center !important;
+}
+
+.header.is-align-center {
+  margin-bottom: 48px !important;
+}
+
+/* Ensure full width buttons on mobile */
+.button-group.is-vertical-stretch .button {
+  width: 100% !important;
+  display: block !important;
+  text-align: center !important;
+}
+
+/* Better pricing card layout */
+.grid_4-col > li .w-layout-hflex {
+  margin-bottom: 8px !important;
+}
+
+/* Improve feature list spacing */
+ul[aria-label="Plan features"] {
+  padding-left: 0 !important;
+}
+
+ul[aria-label="Plan features"] li {
+  padding: 8px 0 !important;
+  margin-bottom: 4px !important;
+}
+
+/* Better divider spacing */
+.divider {
+  margin: 20px 0 !important;
+}
+
+/* Improve card body padding */
+.card_body {
+  padding: 28px 24px !important;
+}
+
