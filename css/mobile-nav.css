@@ -1,0 +1,518 @@
+/* Mobile Navigation Styles - Enhanced Mobile Menu */
+
+/* Ensure mobile menu button is always visible on mobile */
+@media screen and (max-width: 991px) {
+  /* Make mobile menu button visible and properly styled */
+  .nav_mobile-menu-button,
+  .w-nav-button {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-width: 48px !important;
+    min-height: 48px !important;
+    padding: 10px !important;
+    z-index: 1000 !important;
+    position: relative !important;
+    background-color: transparent !important;
+    border: none !important;
+    cursor: pointer !important;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2) !important;
+    color: #fff !important;
+    order: 2 !important;
+  }
+
+  .nav_mobile-menu-button .icon {
+    width: 28px !important;
+    height: 28px !important;
+    color: inherit !important;
+  }
+
+  .nav_mobile-menu-button.w--open {
+    position: fixed !important;
+    top: 16px !important;
+    right: 16px !important;
+    z-index: 1001 !important;
+    background-color: transparent !important;
+  }
+
+  /* Hide desktop navigation on mobile */
+  .nav_menu,
+  .w-nav-menu {
+    display: none !important;
+  }
+
+  /* Show navigation when menu is open */
+  .w-nav-menu.w--open {
+    display: flex !important;
+    flex-direction: column !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: 100vh !important;
+    background-color: #000 !important;
+    z-index: 999 !important;
+    padding: 80px 24px 24px 24px !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch;
+    gap: 0 !important;
+  }
+
+  /* Navigation overlay */
+  .w-nav-overlay {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    background-color: rgba(0, 0, 0, 0.95) !important;
+    z-index: 998 !important;
+    display: none !important;
+  }
+
+  .w-nav-overlay.w--open {
+    display: block !important;
+  }
+
+  /* Navigation list styling */
+  .nav_menu-list,
+  .w-nav-menu .w-list-unstyled {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style: none !important;
+  }
+
+  /* Navigation menu items */
+  .nav_menu-list-item,
+  .w-nav-menu > li {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+
+  .nav_menu-list-item:last-child {
+    border-bottom: none !important;
+  }
+
+  /* Navigation links */
+  .nav_link,
+  .w-nav-menu a {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    padding: 20px 0 !important;
+    color: #fff !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    min-height: 56px !important;
+    border: none !important;
+    background: transparent !important;
+    transition: color 0.2s ease !important;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .nav_link:hover,
+  .nav_link:active,
+  .w-nav-menu a:hover {
+    color: #4ade80 !important; /* Lime green accent */
+    background-color: transparent !important;
+  }
+
+  /* Dropdown toggles */
+  .w-dropdown-toggle {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+  }
+
+  .nav-caret,
+  .w-icon-dropdown-toggle {
+    width: 20px !important;
+    height: 20px !important;
+    transition: transform 0.3s ease !important;
+  }
+
+  .w-dropdown-toggle[aria-expanded="true"] .nav-caret,
+  .w-dropdown-toggle[aria-expanded="true"] .w-icon-dropdown-toggle {
+    transform: rotate(180deg) !important;
+  }
+
+  /* Dropdown lists */
+  .w-dropdown-list,
+  .nav_dropdown-list,
+  .mega-nav_dropdown-list {
+    position: static !important;
+    display: none !important;
+    width: 100% !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 0 0 24px !important;
+    margin-top: 8px !important;
+  }
+
+  .w-dropdown-list.w--open,
+  .w-dropdown[aria-expanded="true"] .w-dropdown-list {
+    display: block !important;
+    animation: slideDown 0.3s ease !important;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Dropdown links */
+  .nav_dropdown-link,
+  .w-dropdown-list a {
+    display: flex !important;
+    align-items: center !important;
+    padding: 16px 0 !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-size: 16px !important;
+    text-decoration: none !important;
+    min-height: 48px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+  }
+
+  .nav_dropdown-link:hover,
+  .nav_dropdown-link:active,
+  .w-dropdown-list a:hover {
+    color: #4ade80 !important;
+    background-color: transparent !important;
+  }
+
+  /* Mega navigation dropdown */
+  .mega-nav_dropdown-list-wrapper {
+    padding: 0 !important;
+  }
+
+  .mega-nav_dropdown-list .grid_3-col {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+
+  .mega-nav_list {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .mega-nav_list li {
+    margin-bottom: 16px !important;
+  }
+
+  .mega-nav_link-item {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 16px !important;
+    padding: 0 !important;
+    text-decoration: none !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+  }
+
+  .mega-nav_link-item:hover {
+    color: #4ade80 !important;
+  }
+
+  .mega-nav_link-item .icon {
+    width: 32px !important;
+    height: 32px !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* Eyebrow in dropdowns */
+  .mega-nav_dropdown-list .eyebrow {
+    color: rgba(255, 255, 255, 0.6) !important;
+    font-size: 12px !important;
+    margin-bottom: 12px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.1em !important;
+  }
+
+  /* Get started button in mobile menu */
+  .nav_right .button-group {
+    width: 100% !important;
+    margin-top: 24px !important;
+    padding-top: 24px !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+
+  .nav_right .button {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 56px !important;
+    padding: 16px 24px !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    background-color: #4ade80 !important;
+    color: #000 !important;
+    border-radius: 12px !important;
+    text-decoration: none !important;
+    transition: background-color 0.2s ease, transform 0.1s ease !important;
+    -webkit-tap-highlight-color: rgba(74, 222, 128, 0.3);
+  }
+
+  .nav_right .button:hover,
+  .nav_right .button:active {
+    background-color: #22c55e !important;
+    transform: scale(0.98) !important;
+  }
+
+  /* Navigation container */
+  .nav_container {
+    position: relative !important;
+    z-index: 100 !important;
+    padding: 16px 20px !important;
+  }
+
+  .nav_container.w--open {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 1000 !important;
+  }
+
+  /* Logo stays visible */
+  .nav_logo {
+    z-index: 1001 !important;
+    position: relative !important;
+  }
+
+  /* Card link in dropdown */
+  .card-link {
+    display: block !important;
+    width: 100% !important;
+    padding: 20px !important;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border-radius: 12px !important;
+    margin: 16px 0 !important;
+    text-decoration: none !important;
+  }
+
+  .card-link .card_body {
+    padding: 0 !important;
+  }
+
+  .card-link .heading_h3 {
+    color: #fff !important;
+    margin-bottom: 8px !important;
+  }
+
+  .card-link .paragraph_small {
+    color: rgba(255, 255, 255, 0.7) !important;
+  }
+
+  /* Hide button group that contains Get started in desktop nav */
+  .nav_right > .button-group:first-child {
+    display: none !important;
+  }
+
+  /* Show button group in mobile menu */
+  .w-nav-menu.w--open ~ .button-group {
+    display: flex !important;
+  }
+
+  /* Ensure nav_right is visible in mobile menu */
+  .nav_right {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 0 !important;
+  }
+}
+
+/* Extra small mobile devices */
+@media screen and (max-width: 479px) {
+  .w-nav-menu.w--open {
+    padding: 70px 20px 20px 20px !important;
+  }
+
+  .nav_link,
+  .w-nav-menu a {
+    padding: 18px 0 !important;
+    font-size: 17px !important;
+  }
+
+  .nav_dropdown-link,
+  .w-dropdown-list a {
+    padding: 14px 0 !important;
+    font-size: 15px !important;
+  }
+
+  .nav_right .button {
+    font-size: 17px !important;
+    padding: 14px 20px !important;
+  }
+
+  .nav_mobile-menu-button.w--open {
+    top: 12px !important;
+    right: 12px !important;
+  }
+}
+
+/* Smooth transitions */
+.w-nav-menu {
+  transition: all 0.3s ease !important;
+}
+
+/* Prevent body scroll when menu is open */
+body.w-nav-open {
+  overflow: hidden !important;
+  position: fixed !important;
+  width: 100% !important;
+}
+
+/* Close button styling */
+.nav_mobile-menu-button.w--open .icon {
+  position: relative;
+}
+
+/* Ensure proper stacking */
+.nav.is-inverse {
+  position: relative;
+  z-index: 100;
+}
+
+/* Make sure desktop menu is hidden on mobile */
+@media screen and (max-width: 991px) {
+  .nav_right > nav:not(.w--open) {
+    display: none !important;
+  }
+
+  /* Navigation structure on mobile */
+  .nav_container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex-wrap: nowrap !important;
+    width: 100% !important;
+  }
+
+  /* Ensure nav_right is properly structured */
+  .nav_right {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    order: 3 !important;
+  }
+
+  /* Show Get started button next to hamburger on mobile */
+  .nav_right > .button-group.margin-top_none {
+    display: flex !important;
+    margin: 0 !important;
+    order: 1 !important;
+  }
+
+  .nav_right > .button-group.margin-top_none .button {
+    padding: 10px 18px !important;
+    font-size: 14px !important;
+    min-height: 40px !important;
+    white-space: nowrap !important;
+    border-radius: 8px !important;
+  }
+
+  /* Hide Get started button when menu is open */
+  .w-nav-menu.w--open ~ .button-group,
+  .w-nav[data-collapse="medium"].w--open .nav_right > .button-group.margin-top_none {
+    display: none !important;
+  }
+
+  /* Logo positioning */
+  .nav_left {
+    order: 1 !important;
+    flex: 1 !important;
+  }
+
+  /* Style the cloned Get started button in mobile menu */
+  .w-nav-menu .mobile-menu-cta {
+    width: 100% !important;
+    margin-top: 24px !important;
+    padding-top: 24px !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+    display: none !important;
+    flex-direction: column !important;
+  }
+
+  .w-nav-menu.w--open .mobile-menu-cta {
+    display: flex !important;
+  }
+
+  .mobile-menu-cta .button {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 56px !important;
+    padding: 16px 24px !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    background-color: #4ade80 !important;
+    color: #000 !important;
+    border-radius: 12px !important;
+    text-decoration: none !important;
+    transition: background-color 0.2s ease, transform 0.1s ease !important;
+    -webkit-tap-highlight-color: rgba(74, 222, 128, 0.3);
+  }
+
+  .mobile-menu-cta .button:hover,
+  .mobile-menu-cta .button:active {
+    background-color: #22c55e !important;
+    transform: scale(0.98) !important;
+  }
+
+  /* Card link styling in mobile menu */
+  .w-nav-menu.w--open .card-link {
+    display: block !important;
+    width: 100% !important;
+    padding: 20px !important;
+    margin: 20px 0 !important;
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    border-radius: 12px !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+
+  .w-nav-menu.w--open .card-link .heading_h3 {
+    color: #fff !important;
+    font-size: 18px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .w-nav-menu.w--open .card-link .paragraph_small {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-size: 14px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .w-nav-menu.w--open .text-button {
+    color: #4ade80 !important;
+  }
+
+  /* Improve button label readability */
+  .button_label {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+  }
+}
+

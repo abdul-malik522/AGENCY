@@ -1,0 +1,234 @@
+/* Hero Section Layout - Matching Reference Design */
+
+header.section.is-secondary {
+  position: relative;
+  min-height: 100vh;
+  overflow: visible !important;
+  background-color: #fff;
+}
+
+header.section.is-secondary .container.is-max {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero text container - stacked layout */
+header.section .grid_1-col {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;
+  gap: 0;
+}
+
+/* Make headings very large and bold */
+header.section .heading-responsive_xlarge {
+  font-size: clamp(4rem, 18vw, 22rem) !important;
+  line-height: 0.85 !important;
+  font-weight: 900 !important;
+  letter-spacing: -0.03em !important;
+  margin: 0 !important;
+  position: relative;
+  z-index: 5;
+  color: #000 !important;
+  text-align: center;
+  mix-blend-mode: normal;
+}
+
+/* Images grid container - absolute positioned overlay */
+#w-node-a3d56dbc-99a9-4e63-5750-51a12b060b02-2b060af1.grid_12-col {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: grid !important;
+  grid-template-columns: repeat(12, 1fr) !important;
+  grid-template-rows: repeat(12, 1fr) !important;
+  gap: 16px !important;
+  padding: 20px;
+  pointer-events: none;
+}
+
+/* Image positioning - overlapping with text words */
+#w-node-a3d56dbc-99a9-4e63-5750-51a12b060b03-2b060af1 {
+  /* Modern workspace - Top left, overlapping INNOVATE */
+  grid-column: 1 / 5;
+  grid-row: 1 / 6;
+  z-index: 3;
+}
+
+#w-node-a3d56dbc-99a9-4e63-5750-51a12b060b06-2b060af1 {
+  /* Collaboration interface/Tablet - Right side, standalone */
+  grid-column: 8 / 13;
+  grid-row: 1 / 7;
+  z-index: 3;
+}
+
+#w-node-a3d56dbc-99a9-4e63-5750-51a12b060b09-2b060af1 {
+  /* Community workshop - Center, below CREATE */
+  grid-column: 3 / 9;
+  grid-row: 5 / 10;
+  z-index: 3;
+}
+
+#w-node-a3d56dbc-99a9-4e63-5750-51a12b060b0c-2b060af1 {
+  /* FAQ document - Bottom left, overlapping INSPIRE */
+  grid-column: 1 / 6;
+  grid-row: 8 / 13;
+  z-index: 3;
+}
+
+#w-node-a3d56dbc-99a9-4e63-5750-51a12b060b0f-2b060af1 {
+  /* Community events/Gallery - Bottom right, standalone */
+  grid-column: 7 / 13;
+  grid-row: 9 / 13;
+  z-index: 3;
+}
+
+/* Image containers with rounded corners */
+.grid_12-col .image-ratio_auto {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: inherit;
+}
+
+.grid_12-col .image-ratio_auto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Text positioning - ensure proper order and z-index */
+#w-node-a3d56dbc-99a9-4e63-5750-51a12b060af6-2b060af1 {
+  /* INNOVATE - top */
+  order: 1;
+  position: relative;
+  z-index: 6;
+  margin-bottom: -10vh;
+}
+
+#w-node-a3d56dbc-99a9-4e63-5750-51a12b060afa-2b060af1 {
+  /* CREATE - middle */
+  order: 2;
+  position: relative;
+  z-index: 6;
+  margin: -5vh 0;
+}
+
+#w-node-a3d56dbc-99a9-4e63-5750-51a12b060afe-2b060af1 {
+  /* INSPIRE - bottom */
+  order: 3;
+  position: relative;
+  z-index: 6;
+  margin-top: -10vh;
+}
+
+/* Ensure text stays above images */
+header.section .position_relative {
+  position: relative;
+  z-index: 6;
+}
+
+header.section .z-index_2 {
+  z-index: 6;
+}
+
+/* Remove the innovate text from inside grid */
+#w-node-a3d56dbc-99a9-4e63-5750-51a12b060b02-2b060af1 h2.heading-responsive_xlarge {
+  display: none;
+}
+
+/* Desktop adjustments */
+@media screen and (min-width: 992px) {
+  header.section .grid_1-col {
+    padding: 120px 40px;
+  }
+  
+  #w-node-a3d56dbc-99a9-4e63-5750-51a12b060b02-2b060af1.grid_12-col {
+    gap: 20px;
+    padding: 40px;
+  }
+}
+
+/* Tablet adjustments */
+@media screen and (max-width: 991px) {
+  header.section .heading-responsive_xlarge {
+    font-size: clamp(3rem, 14vw, 16rem) !important;
+  }
+  
+  #w-node-a3d56dbc-99a9-4e63-5750-51a12b060b02-2b060af1.grid_12-col {
+    gap: 12px;
+    padding: 20px;
+  }
+  
+  header.section .grid_1-col {
+    padding: 80px 20px;
+  }
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 767px) {
+  header.section .grid_1-col {
+    padding: 60px 20px;
+    gap: 20px;
+  }
+  
+  header.section .heading-responsive_xlarge {
+    font-size: clamp(2.5rem, 12vw, 14rem) !important;
+    line-height: 0.9 !important;
+  }
+  
+  /* Simplify grid on mobile */
+  #w-node-a3d56dbc-99a9-4e63-5750-51a12b060b02-2b060af1.grid_12-col {
+    grid-template-columns: repeat(6, 1fr) !important;
+    grid-template-rows: repeat(8, 1fr) !important;
+    gap: 10px;
+    padding: 15px;
+  }
+  
+  #w-node-a3d56dbc-99a9-4e63-5750-51a12b060b03-2b060af1 {
+    grid-column: 1 / 4;
+    grid-row: 1 / 4;
+  }
+  
+  #w-node-a3d56dbc-99a9-4e63-5750-51a12b060b06-2b060af1 {
+    grid-column: 4 / 7;
+    grid-row: 1 / 5;
+  }
+  
+  #w-node-a3d56dbc-99a9-4e63-5750-51a12b060b09-2b060af1 {
+    grid-column: 2 / 6;
+    grid-row: 4 / 7;
+  }
+  
+  #w-node-a3d56dbc-99a9-4e63-5750-51a12b060b0c-2b060af1 {
+    grid-column: 1 / 4;
+    grid-row: 6 / 9;
+  }
+  
+  #w-node-a3d56dbc-99a9-4e63-5750-51a12b060b0f-2b060af1 {
+    grid-column: 4 / 7;
+    grid-row: 7 / 9;
+  }
+  
+  /* Adjust text spacing on mobile */
+  #w-node-a3d56dbc-99a9-4e63-5750-51a12b060af6-2b060af1,
+  #w-node-a3d56dbc-99a9-4e63-5750-51a12b060afa-2b060af1,
+  #w-node-a3d56dbc-99a9-4e63-5750-51a12b060afe-2b060af1 {
+    margin: 0;
+  }
+}
+
