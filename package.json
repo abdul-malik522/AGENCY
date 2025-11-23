@@ -1,0 +1,20 @@
+{
+  "name": "monk-agency-website",
+  "version": "1.0.0",
+  "description": "MONK Agency Website - A modern, responsive website for design and Web3 services",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  },
+  "keywords": [
+    "agency",
+    "web3",
+    "design",
+    "website"
+  ],
+  "author": "Taylor Brooks",
+  "license": "UNLICENSED",
+  "private": true
+}
+
